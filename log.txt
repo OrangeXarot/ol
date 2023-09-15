@@ -1,21 +1,51 @@
-Fri Sep 15 10:48:59 2023
-Linux-5.10.0-21-amd64-x86_64-with-glibc2.31
-Ren'Py 8.1.2.23090503
+Sat Sep 16 00:34:22 2023
+Linux-6.5.3-arch1-1-x86_64-with-glibc2.38
+Ren'Py 8.2.0.0+unofficial
  
 
-Bootstrap to the start of init.init. took 0.04s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.03s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.03s
+Loader init. took 0.01s
+Loading error handling. took 0.04s
+Loading script. took 1.02s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.04s
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_main_menu.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_load_save.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/classic_navigation.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_yesno_prompt.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_preferences.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/classic_joystick_preferences.rpymc'
+Running init code. took 0.09s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.00s
 Index archives took 0.00s
-Backing up script files to '/home/5agr12/.renpy/backups/ol':
+Backing up script files to '/home/orangexarot/.renpy/backups/ol':
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
@@ -28,20 +58,27 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.06s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.12s
+Interface start. took 0.11s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 530 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 20.3.5'
+Vendor: "b'AMD'"
+Renderer: b'AMD Radeon Graphics (renoir, LLVM 16.0.6, DRM 3.54, 6.5.3-arch1-1)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.1.7-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1178, 663) drawable=(1178, 663)
+Screen sizes: virtual=(1920, 1080) physical=(954, 1042) drawable=(954, 1042)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
