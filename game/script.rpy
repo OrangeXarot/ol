@@ -5,7 +5,7 @@
 
 define e = Character("Halo")
 define me = Character("Me")
-
+define c = Character("Covenant")
 
 # The game starts here.
 
