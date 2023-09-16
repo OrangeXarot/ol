@@ -61,19 +61,25 @@ label after:
     me "Vabbè meglio se mi sbrigo a prepararmi che devo andare a scuola"
 
 
-    #vpunchlink
+    #vpunch
     #When invoked, this transition shakes the screen vertically for a quarter second. Imitating and customizing this transition and hpunch is best done using ATL Transitions.
-    # hpunchlink
+    # hpunch
     #When invoked, this transition shakes the screen horizontally for a quarter second.
 
 
-    scene bg strada
+    scene bg strada with fade:
+        xzoom 2 yzoom 2
     # https://www.pinterest.com/pin/827114287795436044/
+    # GAy
+    
+
 
     me "Spero che almeno oggi i bulli mi lascino in pace..."
+
+    scene bg black with fade
     "2 ore dopo"
     
-    scene bg classe:
+    scene bg class with fade:
         xzoom 2.5 yzoom 2.5
 
 
