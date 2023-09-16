@@ -141,7 +141,12 @@ label bullying:
     bullo "Vieni qua"
     me "Ok..."
     "Oh no cosa vuole fare?"
-    play sound "pipe.mp3"
+    
+    # define audio.pipe = "audio/pipe.mp3.mp3"
+    # play sound pipe
+    
+    play sound "audio/pipe.mp3.mp3"
+
     "~ pipe.mp3 ~"
     me "huh cos'era quel suono??"
     bullo "Stai zitto e vieni qui"
@@ -152,11 +157,14 @@ label bullying:
     
     "~ SPLASH ~"
     scene bg splash
-    play sound "splash.mp3"
+    play sound "audio/splash.mp3.mp3"
     me "BRHGGRG blbl °°°°"
     "e ancora una volta sono dentro questo cesso"
     scene bg black
     
+    # define audio.sunflower = "music/sun-flower-slow-jam.ogg"
+    # play sound sunflower
+
 
     scene bg apnea with fade
     
