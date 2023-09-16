@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 12, in script
+    me "My name is [povname]!"
+KeyError: 'name'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 12, in script
+    me "My name is [povname]!"
+  File "/usr/share/renpy/renpy/ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/usr/share/renpy/renpy/exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "/usr/share/renpy/renpy/character.py", line 1363, in __call__
+    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
+  File "/usr/share/renpy/renpy/character.py", line 1279, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "/usr/share/renpy/renpy/character.py", line 1259, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "/usr/share/renpy/renpy/substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+  File "/usr/share/renpy/renpy/substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+KeyError: 'name'
+
+Linux-6.5.3-arch1-1-x86_64-with-glibc2.38 x86_64
+Ren'Py 8.2.0.0+unofficial
+ol 1.0
+Sat Sep 16 11:23:46 2023

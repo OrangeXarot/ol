@@ -1,32 +1,28 @@
-﻿# The script of the game goes in this file.
+﻿define e = Character("Halo")
+define me = Character("[name]")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Halo")
-define me = Character("Me")
-define c = Character("Covenant")
-
-# The game starts here.
+label name:
+    python:
+        name = renpy.input("Come ti chiami?", length=32)
+        name = name.strip()
+    
+    menu correct:
+        "Is your name [name]?"
+        "Sì":
+            jump dream
+        "No":
+            jump name
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    jump name
+    
+label dream:
 
     show halo happy
-
-    # These display lines of dialogue.
+    with fade
 
     e "Here's my cock."
-
     e "You like it?"
 
     menu choice:
@@ -51,7 +47,14 @@ label after:
     with fade
 
     me "Wait what?"
+    me "What is happening?"
 
-    # This ends the game.
+    scene bg wake
+    with fade
+
+    me "Ah god damn bro"
+    me "Ho rifatto quel sogno"
+    me "Certo che addormentarmi giocando ad Halo mi fa sempre quel effetto"
+    me "Poi era pure in inglese..."
 
     return
