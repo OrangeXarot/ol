@@ -23,7 +23,7 @@ label dream:
     show halo dream
     with fade
 
-    e "Here's my cock."
+    e "Here's my cock, [name]."
     e "You like it?"
 
     menu choice:
