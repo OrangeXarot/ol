@@ -20,7 +20,7 @@ label start:
     
 label dream:
 
-    show bg white
+    scene bg white
     show halo dream
     with fade
 
@@ -45,7 +45,6 @@ label noed:
 
 label after:
 
-    hide bg white
     hide halo
     with dissolve
 
@@ -61,7 +60,6 @@ label after:
     me "Poi era pure in inglese..."
     me "Vabbè meglio se mi sbrigo a prepararmi che devo andare a scuola"
 
-    hide bg wake
 
     #vpunchlink
     #When invoked, this transition shakes the screen vertically for a quarter second. Imitating and customizing this transition and hpunch is best done using ATL Transitions.
@@ -100,11 +98,22 @@ label bold:
 
     bullo "Come ti permetti figlio di puttana?!"
 
-    "SLAP!" with hpunch
+    scene bg kapow:
+        xzoom 3.3 yzoom 2.7
+
+
+    # https://imgs.search.brave.com/2HxP9DOJKVv-93Gg5_47kvUn80jjrYwvzfEjlypyHZk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/d29yZC1rYXBvdy1j/b21pYy1jbG91ZF8x/MzA4LTU0NjM0Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn
+
+    "~ SLAP! ~" with hpunch
+
+    scene classe:
+        xzoom 2.5 yzoom 2.5
+        
+    show bollo
     
     bullo "Ora te vieni con me in bagno"
     jump bullying
 
 label bullying:
-
+    
     return
