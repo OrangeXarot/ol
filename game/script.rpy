@@ -44,7 +44,7 @@ label noed:
 label after:
 
     hide halo
-    with fade
+    with dissolve
 
     me "Wait what?"
     me "What is happening?"
@@ -56,5 +56,6 @@ label after:
     me "Ho rifatto quel sogno"
     me "Certo che addormentarmi giocando ad Halo mi fa sempre quel effetto"
     me "Poi era pure in inglese..."
+    me "Vabbè meglio se mi sbrigo a prepararmi che devo andare a scuola"
 
     return
