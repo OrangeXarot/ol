@@ -19,6 +19,7 @@ label start:
     
 label dream:
 
+    show bg white
     show halo dream
     with fade
 
@@ -43,6 +44,7 @@ label noed:
 
 label after:
 
+    hide bg white
     hide halo
     with dissolve
 

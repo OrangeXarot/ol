@@ -1,4 +1,4 @@
-Sat Sep 16 11:33:03 2023
+Sat Sep 16 12:10:27 2023
 Linux-6.5.3-arch1-1-x86_64-with-glibc2.38
 Ren'Py 8.2.0.0+unofficial
  
@@ -7,8 +7,8 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.02s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Traceback (most recent call last):
   File "/usr/share/renpy/renpy/script.py", line 703, in load_file
@@ -49,18 +49,91 @@ Backing up script files to '/home/orangexarot/.renpy/backups/ol':
 Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.01s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.01s
-Prepare screens took 0.03s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'AMD'"
+Renderer: b'AMD Radeon Graphics (renoir, LLVM 16.0.6, DRM 3.54, 6.5.3-arch1-1)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.1.7-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(954, 1042) drawable=(954, 1042)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 7.85s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_main_menu.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_load_save.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/classic_navigation.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_yesno_prompt.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/screen_preferences.rpymc'
+Traceback (most recent call last):
+  File "/usr/share/renpy/renpy/script.py", line 703, in load_file
+    with open(rpycfn, "wb") as f:
+         ^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/share/renpy/renpy/common/_layout/classic_joystick_preferences.rpymc'
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/home/orangexarot/.renpy/backups/ol':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object. took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.04s
@@ -73,5 +146,5 @@ Vendor: "b'AMD'"
 Renderer: b'AMD Radeon Graphics (renoir, LLVM 16.0.6, DRM 3.54, 6.5.3-arch1-1)'
 Version: b'4.6 (Compatibility Profile) Mesa 23.1.7-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(954, 1042) drawable=(954, 1042)
+Screen sizes: virtual=(1920, 1080) physical=(954, 537) drawable=(954, 537)
 Maximum texture size: 4096x4096
