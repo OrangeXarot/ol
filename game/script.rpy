@@ -79,6 +79,7 @@ label after:
 label pussy:
     b "Bravo..."
     b "Anzi sai che c'é? Oggi ho voglia di fare male a qualcuno"
+    b "Seguimi in bagno"
     jump bullying
 
 label bold:
@@ -88,5 +89,5 @@ label bold:
     jump bullying
 
 label bullying:
-    
+
     return
