@@ -87,10 +87,9 @@ label after:
         xzoom 2.5 yzoom 2.5
 
 
-    show bollo:
-        xzoom 1.2 yzoom 1.2
-    show bollo2 at right
-    show bollo3 at left
+    show bollo normale
+    show bollo2 normale at right
+    show bollo3 normale at left
     
     bullo "Hey [name], oggi quanti soldi hai portato?"
     show bollo:
