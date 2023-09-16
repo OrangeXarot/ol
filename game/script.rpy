@@ -67,10 +67,13 @@ label after:
     #When invoked, this transition shakes the screen horizontally for a quarter second.
 
 
+    scene bg strada
+    # https://www.pinterest.com/pin/827114287795436044/
+
     me "Spero che almeno oggi i bulli mi lascino in pace..."
     "2 ore dopo"
     
-    scene classe:
+    scene bg classe:
         xzoom 2.5 yzoom 2.5
 
 
@@ -106,7 +109,7 @@ label bold:
 
     "~ SLAP! ~" with hpunch
 
-    scene classe:
+    scene bg classe:
         xzoom 2.5 yzoom 2.5
         
     show bollo
