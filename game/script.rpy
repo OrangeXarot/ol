@@ -56,7 +56,7 @@ label after:
 
     me "Ah god damn bro"
     me "Ho rifatto quel sogno"
-    me "Certo che addormentarmi giocando ad Halo mi fa sempre quel effetto"
+    me "Certo che addormentarmi giocando ad Halo mi fa sempre quell'effetto"
     me "Poi era pure in inglese..."
     me "Vabbè meglio se mi sbrigo a prepararmi che devo andare a scuola"
 
