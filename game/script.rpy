@@ -7,7 +7,7 @@ label name:
         name = name.strip()
     
     menu correct:
-        "Is your name [name]?"
+        "Ti chiami [name]?"
         "Sì":
             jump dream
         "No":
