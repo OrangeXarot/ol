@@ -158,7 +158,7 @@ label bullying:
     scene bg black
     
 
-    scene bg apnea
+    scene bg apnea with fade
     
 
 
