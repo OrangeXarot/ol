@@ -133,7 +133,8 @@ label bold:
 
 label bullying:
 
-    scene bg bagno
+    scene bg bagno:
+        xzoom 3.8 yzoom 3.3
 
     # play sound "woof.mp3" volume 0.5
 
@@ -155,9 +156,11 @@ label bullying:
     # https://vid.puffyan.us/watch?v=SB-QvuQEmwY (https://www.youtube.com/watch?v=SB-QvuQEmwY shhh)
     # https://imgs.search.brave.com/CQr_ljJ_Nh1TXEzJ9cw8sTaJTHJqGolhqckMgyBoiLU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NjcyMTkxL3Bob3Rv/L3NwbGFzaC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9R2JD/MnhqWkZDTVdaSHQ4/Q2l5SThVLUpOU3Rx/R0ttdVctZzM5Q29t/LXdGZz0
     
-    "~ SPLASH ~"
-    scene bg splash
     play sound "audio/splash.mp3.mp3"
+    scene bg splash:
+        xzoom 3.3 yzoom 3
+    "~ SPLASH ~"
+    
     me "BRHGGRG blbl °°°°"
     "E ancora una volta sono dentro questo cesso"
     scene bg black
@@ -166,7 +169,10 @@ label bullying:
     # play sound sunflower
 
 
+   
+
     scene bg apnea with fade
+    
     "Uff, l'umidità di quest'acqua che mi avvolge è davvero un enigma. "
     "In un mondo costantemente guidato da convenzioni e norme sociali, "
     "l'essere bagnati sembra un'anomalia che sfida la nostra percezione dell'ordine."
@@ -187,8 +193,29 @@ label bullying:
     "Una lezione sull'accettazione della nostra vulnerabilità, sulla modestia di fronte alla natura, e sulla bellezza dell'essere parte di un mondo in costante mutamento."
     "Forse, in fondo, dovrei ringraziare l'acqua per questa preziosa riflessione."
     
-    
+    bullo "HEY TU CHI SEI??"
+    bullo "NO FERMO"
+    "SBANG"
 
+    # Si gira
+    # halo che dice "boh roba"
+    # M.c. sviene (fucking halo starts the riot then he fucking sviene in inglese, ah giusto pass out)
+
+    # girato
+    # bagno
+
+
+    # overlay
+    # opac
+
+    # show water:
+    #       alpha .5
+    #       zorder 5
+    
+    # https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
+ 
+
+    
     # Timmy Returner
     return
     
