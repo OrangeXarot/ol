@@ -163,7 +163,7 @@ label bold:
 
 label bullying:
 
-    scene bg bagno:
+    scene bg bagno with fade:
         xzoom 3.8 yzoom 3.3
 
     # play sound "woof.mp3" volume 0.5
@@ -267,12 +267,22 @@ label bullying:
     # https://www.myinstants.com/en/instant/roblox-death-sound-real-file-9/?utm_source=copy&utm_medium=share
     # https://www.myinstants.com/en/instant/wilhelm-scream/?utm_source=copy&utm_medium=share
 
-    # Si gira
-    # halo che dice "boh roba"
-    # M.c. sviene (fucking halo starts the riot then he fucking sviene in inglese, ah giusto pass out)
 
-    # girato
-    # bagno
+    scene bg soffitto with fade
+    # Si gira
+    show halo normale
+
+    show water:
+        alpha .5
+        zorder 5
+
+    e "Tutto bene?"
+    # halo che dice "boh roba"
+    "Che cazzo?"
+
+    scene bg black with fade
+    # M.c. sviene (fucking halo starts the riot then he fucking sviene in inglese, ah giusto pass out)
+    # https://www.pngegg.com/en/search?q=master+Chief
 
 
     # overlay
@@ -282,7 +292,8 @@ label bullying:
     #       alpha .5
     #       zorder 5
     
-    # https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
+    # soffitto https://imgs.search.brave.com/ChxEFNkEhU4vjEX8fbJjKj7gBbrhRvCf4_BGvoE9Hfk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5sYXZvcmluY2Fz/YS5pdC9wb3N0LzIy/LzIxMjg1L2dhbGxl/cnkvMzgyMTkvY29u/dHJvc29mZml0dG8t/Y29uLWRvY2NpYS1k/aS1sdWNlLWEtbGVk/LmpwZw
+    # water https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
  
     "fine."
     
