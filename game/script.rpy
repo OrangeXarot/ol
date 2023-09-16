@@ -171,10 +171,11 @@ label bullying:
 
    
 
-    scene bg apnea with fade
-    
-    "Uff, l'umidità di quest'acqua che mi avvolge è davvero un enigma. "
-    "In un mondo costantemente guidato da convenzioni e norme sociali, "
+    scene bg apnea with fade:
+        xzoom 10 yzoom 10
+
+    "Uff, l'umidità di quest'acqua che mi avvolge è davvero un enigma."
+    "In un mondo costantemente guidato da convenzioni e norme sociali,"
     "l'essere bagnati sembra un'anomalia che sfida la nostra percezione dell'ordine."
     "Chi siamo noi, se non creature vulnerabili, esposte agli elementi senza alcun controllo?"
     "L'acqua penetra le fibre del mio abbigliamento, avvicinandosi al mio corpo, e con essa, si insinua un senso di disagio."
@@ -192,8 +193,10 @@ label bullying:
     "Uff, essere bagnati è un'esperienza scomoda, ma forse è anche una lezione."
     "Una lezione sull'accettazione della nostra vulnerabilità, sulla modestia di fronte alla natura, e sulla bellezza dell'essere parte di un mondo in costante mutamento."
     "Forse, in fondo, dovrei ringraziare l'acqua per questa preziosa riflessione."
+    "Grazie."
     
     bullo "HEY TU CHI SEI??"
+    "Huh?"
     bullo "NO FERMO"
     "SBANG"
 
