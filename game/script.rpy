@@ -79,7 +79,7 @@ label after:
     scene bg black with fade
     "2 ore dopo"
     
-    scene bg class with fade:
+    scene bg classe with fade:
         xzoom 2.5 yzoom 2.5
 
 
