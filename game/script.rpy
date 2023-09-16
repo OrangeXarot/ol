@@ -1,6 +1,8 @@
 ﻿define e = Character("Halo")
 define me = Character("[name]")
-define bullo = Character("Bullo")
+define bullo = Character("Antonio")
+define bullo2 = Character("Antonello")
+define bullo3 = Character("Bullo 3")
 
 label name:
     python:
@@ -85,11 +87,16 @@ label after:
         xzoom 2.5 yzoom 2.5
 
 
-    show bollo
+    show bollo:
+        xzoom 1.2 yzoom 1.2
+    show bollo2 at right
+    show bollo3 at left
     
     bullo "Hey [name], oggi quanti soldi hai portato?"
-    me "No ti prego mi servono per il pranzo"
-    bullo "Cos'hai detto scusami? Prova a parlarmi così un'altra volta e te ne pentirai"
+    show bollo:
+        xzoom 1 yzoom 1
+    me "No vi prego mi servono per il pranzo"
+    bullo2 "Cos'hai detto scusami? Prova a parlarci così un'altra volta e te ne pentirai"
     menu choice1:
         "Come risponderai?"
         "Hai ragione scusa":
@@ -99,7 +106,8 @@ label after:
 
 label pussy:
 
-    bullo "Bravo..."
+    me "Avete ragione scusate"
+    bullo3 "Bravo..."
     bullo "Anzi sai che c'é? Oggi ho voglia di fare male a qualcuno"
     bullo "Seguimi in bagno"
     jump bullying
@@ -107,6 +115,7 @@ label pussy:
     
 label bold:
 
+    me "Vaffanculo"
     bullo "Come ti permetti figlio di puttana?!"
 
     scene bg kapow:
@@ -122,6 +131,8 @@ label bold:
         xzoom 2.5 yzoom 2.5
         
     show bollo
+    show bollo2 at right
+    show bollo3 at left
     
     bullo "Ora te vieni con me in bagno"
     jump bullying
@@ -201,11 +212,16 @@ label bullying:
     
     bullo "HEY TU CHI SEI??"
     "Huh?"
-    bullo "NO FERMO"
+    bullo3 "NO FERMO"
     "SBANG"
+
+    # bullo2 https://imgs.search.brave.com/-62evOVTI5xU4HmygCYZ_sjexaat2HKIrMy41d4Db88/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1oZC1o/YW5kc29tZS1tYW4t/c3RhcnQteW91ci1w/b3J0Zm9saW8taGFu/ZHNvbWUtZ3V5LXBu/Zy00NjEucG5n
+    # bullo3 https://imgs.search.brave.com/ThVgjvUfXCVmvqesLgL-p3zuNofLb2cKvomGT40W-Bg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2hhbmRzb21l/LWd1eS1wbmctdGFy/a2FuLXRoZW1lLXN0/dWR5LWZvci1tZW4t/c3BlY2lhbC1wbmct/cG5nLW1hbi1oYW5k/c29tZS1ndXlzLWVt/b3Rpb25hbC1wcml2/YXRlLTM5My5wbmc
+
 
     # https://www.myinstants.com/en/instant/death-sound-fortnite-13941/ METTIAMO3 QUESTO
     #https://www.myinstants.com/en/instant/roblox-death-sound-real-file-9/?utm_source=copy&utm_medium=share
+    #https://www.myinstants.com/en/instant/wilhelm-scream/?utm_source=copy&utm_medium=share
 
     # Si gira
     # halo che dice "boh roba"
