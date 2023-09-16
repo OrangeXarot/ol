@@ -19,7 +19,7 @@ label start:
     
 label dream:
 
-    show halo happy
+    show halo dream
     with fade
 
     e "Here's my cock."
