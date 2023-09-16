@@ -237,18 +237,21 @@ label bullying:
     play sound "punch.mp3"
     "~ SBANG ~" with hpunch
     play sound "scream.mp3"
+    bullo3 "AAAAAAA"
     # bullo 3 muore
 
     bullo2 "NO NO NO"
     play sound "strongpunch.mp3"
     "~ SVIUUM ~" with hpunch
     play sound "fortnite.mp3"
+    bullo2 "EUOIUO"
     # bullo 2 muore
 
     bullo "PERCHE' COSA TI ABBIAMO FATTO???"
     play sound "falconpunch.mp3"
     "~ FALCON PUNCH ~" with hpunch
     play sound "oof.mp3"
+    bullo "OOF"
     # bullo 1 muore
 
 
@@ -281,7 +284,7 @@ label bullying:
     
     # https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
  
-
+    "fine."
     
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
