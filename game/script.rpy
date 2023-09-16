@@ -36,6 +36,8 @@ label dream:
         
 label yessed:
     me "Yes, I love it!"
+    # https://www.myinstants.com/en/instant/youtube-uwuuuuu-67534/ (/s)
+    
     jump after
 
 label noed: 
@@ -65,6 +67,7 @@ label after:
     #When invoked, this transition shakes the screen vertically for a quarter second. Imitating and customizing this transition and hpunch is best done using ATL Transitions.
     # hpunch
     #When invoked, this transition shakes the screen horizontally for a quarter second.
+    # 👆🤓
 
     scene bg strada with fade:
         xzoom 2 yzoom 2
@@ -111,7 +114,8 @@ label bold:
 
 
     # https://imgs.search.brave.com/2HxP9DOJKVv-93Gg5_47kvUn80jjrYwvzfEjlypyHZk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/d29yZC1rYXBvdy1j/b21pYy1jbG91ZF8x/MzA4LTU0NjM0Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn
-
+    #https://www.myinstants.com/en/instant/slapped-6402/?utm_source=copy&utm_medium=share
+    play sound "slap.mp3"
     "~ SLAP! ~" with hpunch
 
     scene bg classe:
@@ -161,9 +165,9 @@ label bullying:
         xzoom 3.3 yzoom 3
     "~ SPLASH ~"
     
+    scene bg black
     me "BRHGGRG blbl °°°°"
     "E ancora una volta sono dentro questo cesso"
-    scene bg black
     
     # define audio.sunflower = "music/sun-flower-slow-jam.ogg"
     # play sound sunflower
@@ -200,6 +204,9 @@ label bullying:
     bullo "NO FERMO"
     "SBANG"
 
+    # https://www.myinstants.com/en/instant/death-sound-fortnite-13941/ METTIAMO3 QUESTO
+    #https://www.myinstants.com/en/instant/roblox-death-sound-real-file-9/?utm_source=copy&utm_medium=share
+
     # Si gira
     # halo che dice "boh roba"
     # M.c. sviene (fucking halo starts the riot then he fucking sviene in inglese, ah giusto pass out)
@@ -219,6 +226,6 @@ label bullying:
  
 
     
-    # Timmy Returner
+    # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
     
