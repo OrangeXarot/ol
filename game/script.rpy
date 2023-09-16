@@ -77,12 +77,14 @@ label after:
             jump bold
 
 label pussy:
+
     b "Bravo..."
     b "Anzi sai che c'é? Oggi ho voglia di fare male a qualcuno"
     b "Seguimi in bagno"
     jump bullying
 
 label bold:
+
     b "Come ti permetti figlio di puttana?!"
     "SLAP!"
     b "Ora te vieni con me in bagno"
