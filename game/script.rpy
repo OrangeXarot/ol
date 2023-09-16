@@ -268,13 +268,18 @@ label bullying:
     # https://www.myinstants.com/en/instant/wilhelm-scream/?utm_source=copy&utm_medium=share
 
 
-    scene bg soffitto with fade
+    scene bg soffitto with fade:
+        xzoom 3.7 yzoom 3.3
+
     # Si gira
-    show halo normale
+    show halo normale at center:
+        xzoom 1.3 yzoom 1.3
+    # https://fortnite.fandom.com2/it/wiki/Master_Chief
 
     show water:
-        alpha .5
-        zorder 5
+        alpha .3
+        xzoom 3.3 yzoom 3.3
+        # zorder 5
 
     e "Tutto bene?"
     # halo che dice "boh roba"
@@ -297,6 +302,8 @@ label bullying:
  
     "fine."
     
+
+    # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
     
