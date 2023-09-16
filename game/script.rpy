@@ -84,7 +84,7 @@ label after:
 
     show bollo
     
-    bullo "hey [name], oggi quanti soldi hai portato?"
+    bullo "Hey [name], oggi quanti soldi hai portato?"
     me "No ti prego mi servono per il pranzo"
     bullo "Cos'hai detto scusami? Prova a parlarmi così un'altra volta e te ne pentirai"
     menu choice1:
@@ -145,10 +145,10 @@ label bullying:
     # define audio.pipe = "audio/pipe.mp3.mp3"
     # play sound pipe
     
-    play sound "audio/pipe.mp3.mp3"
+    play sound "audio/pipe.mp3.mp3" 
 
     "~ pipe.mp3 ~"
-    me "huh cos'era quel suono??"
+    me "Huh cos'era quel suono??"
     bullo "Stai zitto e vieni qui"
 
     # splash
@@ -159,7 +159,7 @@ label bullying:
     scene bg splash
     play sound "audio/splash.mp3.mp3"
     me "BRHGGRG blbl °°°°"
-    "e ancora una volta sono dentro questo cesso"
+    "E ancora una volta sono dentro questo cesso"
     scene bg black
     
     # define audio.sunflower = "music/sun-flower-slow-jam.ogg"
@@ -167,8 +167,27 @@ label bullying:
 
 
     scene bg apnea with fade
+    "Uff, l'umidità di quest'acqua che mi avvolge è davvero un enigma. "
+    "In un mondo costantemente guidato da convenzioni e norme sociali, "
+    "l'essere bagnati sembra un'anomalia che sfida la nostra percezione dell'ordine."
+    "Chi siamo noi, se non creature vulnerabili, esposte agli elementi senza alcun controllo?"
+    "L'acqua penetra le fibre del mio abbigliamento, avvicinandosi al mio corpo, e con essa, si insinua un senso di disagio."
+    "Mi ritrovo a riflettere sull'inconvenienza di questa situazione, non per la prima volta."
+    "Ogni goccia è come una piccola sfida alla mia esistenza, una sfida a mantenermi asciutto e intonso in un mondo che sembra divertirsi a mettermi alla prova."
+    "L'umidità rende tutto più pesante, le scarpe squelchiano sotto il mio peso, i vestiti si appiccicano alla pelle, e ogni passo è un impegno."
+    "Ma c'è un'essenza più profonda in questo disagio fisico."
+    "Essere bagnati mi fa sentire vulnerabile, mi costringe a riconoscere la mia fragilità e la mia dipendenza dagli elementi naturali."
+    "Mi chiedo se, in fondo, questa esperienza non sia una lezione di modestia."
+    "Il nostro desiderio di controllo, di dominio sulla natura, è spesso illusorio."
+    "Siamo soggetti alle forze della natura, e l'acqua è solo uno dei suoi molteplici strumenti di umiliazione."
+    "Ma c'è anche bellezza in questa vulnerabilità."
+    "Nell'essere bagnati, ci uniamo a un ciclo millenario di cambiamenti di stato dell'acqua, da liquido a vapore, da ghiaccio a rugiada."
+    "Siamo parte integrante di questo sistema, eppure spesso ci sforziamo di sfuggire alla sua influenza."
+    "Uff, essere bagnati è un'esperienza scomoda, ma forse è anche una lezione."
+    "Una lezione sull'accettazione della nostra vulnerabilità, sulla modestia di fronte alla natura, e sulla bellezza dell'essere parte di un mondo in costante mutamento."
+    "Forse, in fondo, dovrei ringraziare l'acqua per questa preziosa riflessione."
     
-
+    
 
     # Timmy Returner
     return
