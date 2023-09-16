@@ -86,15 +86,19 @@ label after:
     scene bg classe with fade:
         xzoom 2.5 yzoom 2.5
 
+    # bullo2 https://imgs.search.brave.com/-62evOVTI5xU4HmygCYZ_sjexaat2HKIrMy41d4Db88/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1oZC1o/YW5kc29tZS1tYW4t/c3RhcnQteW91ci1w/b3J0Zm9saW8taGFu/ZHNvbWUtZ3V5LXBu/Zy00NjEucG5n
+    # bullo3 https://imgs.search.brave.com/ThVgjvUfXCVmvqesLgL-p3zuNofLb2cKvomGT40W-Bg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2hhbmRzb21l/LWd1eS1wbmctdGFy/a2FuLXRoZW1lLXN0/dWR5LWZvci1tZW4t/c3BlY2lhbC1wbmct/cG5nLW1hbi1oYW5k/c29tZS1ndXlzLWVt/b3Rpb25hbC1wcml2/YXRlLTM5My5wbmc
+
+
 
     show bollo normale
-    show bollo2 normale at right
-    show bollo3 normale at left
+    show bollo2 nero at right
+    show bollo3 nero at left
     
     bullo "Hey [name], oggi quanti soldi hai portato?"
-    show bollo:
-        xzoom 1 yzoom 1
+    show bollo nero with dissolve
     me "No vi prego mi servono per il pranzo"
+    show bollo2 normale with dissolve
     bullo2 "Cos'hai detto scusami? Prova a parlarci così un'altra volta e te ne pentirai"
     menu choice1:
         "Come risponderai?"
@@ -105,8 +109,15 @@ label after:
 
 label pussy:
 
+    show bollo nero with dissolve
+    show bollo2 nero with dissolve
+    show bollo3 nero with dissolve
+
     me "Avete ragione scusate"
+    show bollo3 normale with dissolve
     bullo3 "Bravo..."
+    show bollo3 nero with dissolve
+    show bollo normale with dissolve
     bullo "Anzi sai che c'é? Oggi ho voglia di fare male a qualcuno"
     bullo "Seguimi in bagno"
     jump bullying
@@ -114,7 +125,12 @@ label pussy:
     
 label bold:
 
+    show bollo nero with dissolve
+    show bollo2 nero with dissolve
+    show bollo3 nero with dissolve
+
     me "Vaffanculo"
+    show bollo normale with dissolve
     bullo "Come ti permetti figlio di puttana?!"
 
     scene bg kapow:
@@ -129,9 +145,9 @@ label bold:
     scene bg classe:
         xzoom 2.5 yzoom 2.5
         
-    show bollo
-    show bollo2 at right
-    show bollo3 at left
+    show bollo normale
+    show bollo2 nero at right
+    show bollo3 nero at left
     
     bullo "Ora te vieni con me in bagno"
     jump bullying
@@ -152,8 +168,13 @@ label bullying:
 
     # play sound "woof.mp3" volume 0.5
 
+    show bollo normale
+    show bollo2 nero at right
+    show bollo3 nero at left
 
     bullo "Vieni qua"
+
+    show bollo nero with dissolve
     me "Ok..."
     "Oh no cosa vuole fare?"
     
@@ -164,6 +185,8 @@ label bullying:
 
     "~ pipe.mp3 ~"
     me "Huh cos'era quel suono??"
+
+    show bollo normale with dissolve
     bullo "Stai zitto e vieni qui"
 
     # splash
@@ -181,9 +204,7 @@ label bullying:
     
     # define audio.sunflower = "music/sun-flower-slow-jam.ogg"
     # play sound sunflower
-
-
-   
+    # no era solo flavio e windows insieme... the fuck is pipe.mp3.mp3
 
     scene bg apnea with fade:
         xzoom 10 yzoom 10
@@ -211,16 +232,37 @@ label bullying:
     
     bullo "HEY TU CHI SEI??"
     "Huh?"
+    
     bullo3 "NO FERMO"
-    "SBANG"
+    play sound "punch.mp3"
+    "~ SBANG ~" with hpunch
+    play sound "scream.mp3"
+    # bullo 3 muore
 
-    # bullo2 https://imgs.search.brave.com/-62evOVTI5xU4HmygCYZ_sjexaat2HKIrMy41d4Db88/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1oZC1o/YW5kc29tZS1tYW4t/c3RhcnQteW91ci1w/b3J0Zm9saW8taGFu/ZHNvbWUtZ3V5LXBu/Zy00NjEucG5n
-    # bullo3 https://imgs.search.brave.com/ThVgjvUfXCVmvqesLgL-p3zuNofLb2cKvomGT40W-Bg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2hhbmRzb21l/LWd1eS1wbmctdGFy/a2FuLXRoZW1lLXN0/dWR5LWZvci1tZW4t/c3BlY2lhbC1wbmct/cG5nLW1hbi1oYW5k/c29tZS1ndXlzLWVt/b3Rpb25hbC1wcml2/YXRlLTM5My5wbmc
+    bullo2 "NO NO NO"
+    play sound "strongpunch.mp3"
+    "~ SVIUUM ~" with hpunch
+    play sound "fortnite.mp3"
+    # bullo 2 muore
+
+    bullo "PERCHE' COSA TI ABBIAMO FATTO???"
+    play sound "falconpunch.mp3"
+    "~ FALCON PUNCH ~" with hpunch
+    play sound "oof.mp3"
+    # bullo 1 muore
 
 
+    # https://www.myinstants.com/en/instant/punch1/?utm_source=copy&utm_medium=share
+    # https://www.myinstants.com/en/instant/anime-punch/?utm_source=copy&utm_medium=share
+    # https://www.myinstants.com/en/instant/falcon-punch/?utm_source=copy&utm_medium=share
+    
+    # https://www.myinstants.com/en/instant/one-puuuuunch-76720/
+    # https://www.myinstants.com/en/instant/muda-muda-muda-kicks-85146/
+
+  
     # https://www.myinstants.com/en/instant/death-sound-fortnite-13941/ METTIAMO3 QUESTO
-    #https://www.myinstants.com/en/instant/roblox-death-sound-real-file-9/?utm_source=copy&utm_medium=share
-    #https://www.myinstants.com/en/instant/wilhelm-scream/?utm_source=copy&utm_medium=share
+    # https://www.myinstants.com/en/instant/roblox-death-sound-real-file-9/?utm_source=copy&utm_medium=share
+    # https://www.myinstants.com/en/instant/wilhelm-scream/?utm_source=copy&utm_medium=share
 
     # Si gira
     # halo che dice "boh roba"
