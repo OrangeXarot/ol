@@ -348,7 +348,8 @@ label bullying:
     
     scene bg black with fade
     "Poco dopo..."
-    scene bg classe with fade
+    scene bg classe with fade:
+        xzoom 2.5 yzoom 2.5
     
     me "Ma cosa sta succendendo in questa giornata?"
     me "Non ci sto capendo niente..."
@@ -357,8 +358,90 @@ label bullying:
     prof "Ma quale alieno? Smettila di inventarti storie o ti metto una nota"
     me "Va bene..."
     "Ma sto impazzendo?"
+    # Spoiler sì
 
+    scene bg black with fade
     
+    "Dopo le lezioni..."
+    
+    scene bg strada with fade:
+        xzoom 2 yzoom 2
+    
+    me "Questa è stata una delle giornate più strane della mia vita"
+    me "Forse stare troppo tempo sotto l'acqua del cesso mi ha fatto male..."
+    play sound "caduta.mp3"
+    "~ THUMP ~" with vpunch
+    
+    me "Ahia"
+    me "Porca" 
+    me "Troia" 
+    me "Fregnacia"
+    me "Vaffanculo cazzo" 
+    me "Scemo di merda" 
+    me "Puttana laida" 
+    me "Troia schifosa" 
+    me "Bastardo" 
+    me "Puttanella"
+    me "Coglione"
+    me "Rincoglionito" 
+    me "Figa" 
+    me "Comunista" 
+    me "Capitalista"
+    me "Citrullo" 
+    me "Cazzone" 
+    me "Mongoloide" 
+    me "Stronzo" 
+    me "Scemo" 
+    me "Merdaccia" 
+    me "Porca troia" 
+    me "Porca palleta"
+    me "Porco cazzo"
+    me "Maremma maiala" 
+    me "Pirla" 
+    me "Gay" 
+    me "Testa di cazzo" 
+    me "Puta madre" 
+    me "Maiale porco" 
+    me "Pene"
+    me "Cane" 
+    me "Crucco di merda" 
+    me "Finocchio" 
+    me "Terrone"
+    me "Imbecille"
+    me "Cretino" 
+    me "Cafone"
+    me "Frocio" 
+    me "9?"
+    me "Bimbo minchia"
+    me "Minchione"
+    me "mMortacci tua"
+    me "Cafone"
+    me "Succhia" 
+    me "Sti cazzi"
+    me "Cazzi" 
+    me "Perbacco"
+    me "Bocchino"
+    me "Cessone" 
+    me "Chiavare"
+    me "Bastardo" 
+    me "Mortacci" 
+    me "Sega (azienda di videogiochi)" 
+    me "Fottuto" 
+    me "Rompipalle"
+    me "Rompicoglioisazzi" 
+    me "FIGÀ" 
+    me "Mignotta"
+    me "Cavoletti"
+    "..."
+    me "Ok mi è passato il dolore, mi sono solo sbucciato il ginocchio"
+    
+    scene bg black with fade
+    
+    scene bg casa with fade
+    
+    me "Finalmente sono tornato a casa"
+    
+    # NO RACIAL COMMENTS mimimi
     # mettere sfondo che torna a casa e boh
      
     "Fine."
