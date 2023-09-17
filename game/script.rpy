@@ -7,6 +7,9 @@ define mist = Character("???")
 define cove = Character("Covenant")
 define ralof = Character("Ralof")
 define prof = Character("Professore")
+define morty = Character("Morty")
+define batman = Character("BatMan") 
+
 
 label name:
     python:
@@ -235,7 +238,8 @@ label bullying:
     "Una lezione sull'accettazione della nostra vulnerabilità, sulla modestia di fronte alla natura, e sulla bellezza dell'essere parte di un mondo in costante mutamento."
     "Forse, in fondo, dovrei ringraziare l'acqua per questa preziosa riflessione."
     "Grazie."
-    
+    # - chatgpt
+
     mist "Lasciatelo in pace"
     bullo "HEY TU CHI SEI??"
     "Huh?"
@@ -318,6 +322,21 @@ label bullying:
     me "Aspetta, conosco questa frase..."
     me "VIENE DA The Elder Scrolls V: Skyrim"
 
+    # Ralof
+    # https://imgs.search.brave.com/uQ8wU3C4FifTOGon8xSIGwSQ-8Xqi2bzCdkeMJ7xD44/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bmljZXBuZy5jb20v/cG5nL2RldGFpbC8x/MDA5LTEwMDk3OTEw/X3JhbG9mLXNreXJp/bS1zdG9ybWNsb2Fr/cy1lbGRlcnNjcm9s/bHMtZWxkZXJzY3Jv/bGxzdi1za3lyaW0t/cmFsb2YucG5n
+    # Flavio salva questio come "ralof normale"
+
+    # Arbiter (Arbitro) 
+    # https://www.planetminecraft.com/skin/the-arbiter-4994491/
+    # https://imgbin.com/png/5XFqFMS2/halo-3-halo-2-halo-4-halo-combat-evolved-halo-reach-png
+    # https://www.halopedia.org/Ripa_%27Moramee
+    # https://imgs.search.brave.com/olqDvKdNzBNte5lVS4EBnhDfdGY-tc2bepX6pODNt18/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2Vla3BuZy5jb20v/cG5nL2RldGFpbC82/OS02OTUyODVfaGFs/by1wbmcucG5n
+    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArbiter_%2528Halo%2529&psig=AOvVaw0RmWm8xNGAHfhxO8otlfhW&ust=1695068007334000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDbp8W6soEDFQAAAAAdAAAAABAE
+    # Flavio succhiami il cazzo "covenant normale"
+    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aiaschio.it%2Fdaniele-orsato%2F&psig=AOvVaw2SWN5ivvg3c23VGSpOZiUj&ust=1695067934053000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjkta26soEDFQAAAAAdAAAAABAE
+    # approvo
+
+
     show ralof normale
     
     ralof "Eh?"
@@ -373,18 +392,20 @@ label bullying:
     "~ THUMP ~" with vpunch
     
     me "Ahia"
-    me "Porca" 
-    me "Troia" 
+    me "Porca troia" 
     me "Fregnacia"
     me "Vaffanculo cazzo" 
     me "Scemo di merda" 
+    me "Chiappa"
     me "Puttana laida" 
     me "Troia schifosa" 
     me "Bastardo" 
     me "Puttanella"
+    me "Cornuto"
     me "Coglione"
     me "Rincoglionito" 
     me "Figa" 
+    me "Cacone"
     me "Comunista" 
     me "Capitalista"
     me "Citrullo" 
@@ -392,12 +413,14 @@ label bullying:
     me "Mongoloide" 
     me "Stronzo" 
     me "Scemo" 
+    me "Sussy Baka"
     me "Merdaccia" 
     me "Porca troia" 
     me "Porca palleta"
     me "Porco cazzo"
     me "Maremma maiala" 
     me "Pirla" 
+    me "Cazzo pizza"
     me "Gay" 
     me "Testa di cazzo" 
     me "Puta madre" 
@@ -414,7 +437,7 @@ label bullying:
     me "9?"
     me "Bimbo minchia"
     me "Minchione"
-    me "mMortacci tua"
+    me "Mortacci tua"
     me "Cafone"
     me "Succhia" 
     me "Sti cazzi"
@@ -424,6 +447,7 @@ label bullying:
     me "Cessone" 
     me "Chiavare"
     me "Bastardo" 
+    me "Balle"
     me "Mortacci" 
     me "Sega (azienda di videogiochi)" 
     me "Fottuto" 
@@ -437,31 +461,93 @@ label bullying:
     
     scene bg black with fade
     
+    "Dopo il tempo che [name] ci mette per arrivare a casa..."
+
     scene bg casa with fade
     
     me "Finalmente sono tornato a casa"
+    me "Casa dolce casa..."
+    me "Vabbè facciamo partire Halo Reach e freghiamocene altamente dei compiti"
     
-    # NO RACIAL COMMENTS mimimi
-    # mettere sfondo che torna a casa e boh
+    scene bg wake with fade
+    me "Uè b4stocino69 facciamo qualche giro dentro Reach?"
+    # presumo Reach... lol
+
+    scene bg black with fade
+    "4 ore dopo..."
+
+    scene bg wake with fade
+    
+    play sound "knock.mp3"
+    "~ KNOCK KNOCK KNOCK ~"
+    
+    me "CHI CAZZO E' ORA CHE PORCAPUTTANA STO PERDENDO"
+    
+    scene bg door with fade
+    # TODO IMMAGINE
+
+    show morty normale
+
+    me "Salve, hai bisogno?"
+    morty "Mmm-mmmh ciao sono Morty e-ehm... o-oh g-geez"
+    me "MA CHE CAZZO"
+    me "ALLORA NON STAVO IMPAZZENDO"
+    morty "Ehm.. n-non so di cosa tu stia parlando ma a me sembri abbastanza pazzo"
+    me "NO NON CAPISCI"
+    me "TU NON DOVRESTI ESISTERE"
+    me "SEI UN CARTONE ANIMATO"
+    # https://www.youtube.com/watch?v=35gH6iWMSM8 anime
+    morty "O-oh quello... oh geez potrebbe essere stata colpa mia"
+    morty "P-potrei aver fatto un piccolo c-casino con la portal gun..."
+    me "TU COSA? CHE CAZZO HAI FATTO?"
+    morty "Oh geez, ora ti spiego tutto..." 
+
+    scene bg black with fade
+    
+    "Dopo un lungo monologo molto descrittivo, e molto importante per la lore e ai fini della storia sull'accaduto"
+    
+    scene bg door with fade
+    
+    show morty normale
+    
+    morty "Ed è per questo che devo ritrovare subito Rick"
+    me "Zzz..."
+    me "Oh hai finito?"
+    morty "S-sì, oh geez"
+    me "Ok ma in tutto ciò, cosa cazzo centro io?"
+    batman "I AM VENGEANCE"
+    play sound "punch.mp3"
+    "~ SBANG ~" with hpunch
+    morty "AAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    show morty morto
+    show batman
+    # aggiungere immagini TODO
+    # http://pluspng.com/img-png/batman-png-1280.png Batman
+    # https://e1.pngegg.com/pngimages/72/833/png-clipart-rick-and-morty-hq-resource-man-illustration.png Morty
+    morty "SONO M-MORTY, S-SONO M-MORTY M-M-MORTO"
+    # https://static.wikia.nocookie.net/rickandmorty/images/5/52/PM-304.png/revision/latest?cb=20210718063614 Morty ferito
+    batman "No non sei morto, però tutte le tue ossa sì" 
+    morty "Ugh..."
+    me "Ehm... Batman... Cosa ti ha fatto Morty?"
+    batman "Prima di venire qua ha rubato un lecca lecca ad un bambino"
+    me "Ah... e non ti sembra di aver esagerato un pochino?"
+    batman "Nahh... Boh... Non mi ricordo manco se fosse stato lui a farlo"
+    # https://cdn.imgbin.com/23/20/13/imgbin-batman-the-man-who-laughs-joker-drawing-batman-qRBrBreXgLYmGwHZgRb46WbZT.jpg Batman stupido
+    # chatgpt è fosse o era?
+    me "Uhm... ok..."
+    
+
+
+
+
+    # Morty muore giusto? no, batman non uccide
+    
+
+    # Aggiungere più parolacce NO BASTA :'(
+    # NO RACIAL COMMENTS mimimi flavio pussy
      
     "Fine."
     
-
-    
-    # Ralof
-    # https://imgs.search.brave.com/uQ8wU3C4FifTOGon8xSIGwSQ-8Xqi2bzCdkeMJ7xD44/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bmljZXBuZy5jb20v/cG5nL2RldGFpbC8x/MDA5LTEwMDk3OTEw/X3JhbG9mLXNreXJp/bS1zdG9ybWNsb2Fr/cy1lbGRlcnNjcm9s/bHMtZWxkZXJzY3Jv/bGxzdi1za3lyaW0t/cmFsb2YucG5n
-    # Flavio salva questio come "ralof normale"
-
-    # Arbiter (Arbitro) 
-    # https://www.planetminecraft.com/skin/the-arbiter-4994491/
-    # https://imgbin.com/png/5XFqFMS2/halo-3-halo-2-halo-4-halo-combat-evolved-halo-reach-png
-    # https://www.halopedia.org/Ripa_%27Moramee
-    # https://imgs.search.brave.com/olqDvKdNzBNte5lVS4EBnhDfdGY-tc2bepX6pODNt18/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2Vla3BuZy5jb20v/cG5nL2RldGFpbC82/OS02OTUyODVfaGFs/by1wbmcucG5n
-    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArbiter_%2528Halo%2529&psig=AOvVaw0RmWm8xNGAHfhxO8otlfhW&ust=1695068007334000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDbp8W6soEDFQAAAAAdAAAAABAE
-    # Flavio succhiami il cazzo "covenant normale"
-    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aiaschio.it%2Fdaniele-orsato%2F&psig=AOvVaw2SWN5ivvg3c23VGSpOZiUj&ust=1695067934053000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjkta26soEDFQAAAAAdAAAAABAE
-    # approvo
-
     
     # Yoshikage Kira fa il suo monologo
     # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva 
