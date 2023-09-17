@@ -3,6 +3,10 @@ define me = Character("[name]")
 define bullo = Character("Antonio")
 define bullo2 = Character("Antonello")
 define bullo3 = Character("Bullo 3")
+define mist = Character("???")
+define cove = Character("Covenant")
+define ralof = Character("Ralof")
+define prof = Character("Professore")
 
 label name:
     python:
@@ -79,6 +83,7 @@ label after:
 
 
     me "Spero che almeno oggi i bulli mi lascino in pace..."
+    me "Quel fottuto Antonio"
 
     scene bg black with fade
     "2 ore dopo"
@@ -88,7 +93,8 @@ label after:
 
     # bullo2 https://imgs.search.brave.com/-62evOVTI5xU4HmygCYZ_sjexaat2HKIrMy41d4Db88/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1oZC1o/YW5kc29tZS1tYW4t/c3RhcnQteW91ci1w/b3J0Zm9saW8taGFu/ZHNvbWUtZ3V5LXBu/Zy00NjEucG5n
     # bullo3 https://imgs.search.brave.com/ThVgjvUfXCVmvqesLgL-p3zuNofLb2cKvomGT40W-Bg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2hhbmRzb21l/LWd1eS1wbmctdGFy/a2FuLXRoZW1lLXN0/dWR5LWZvci1tZW4t/c3BlY2lhbC1wbmct/cG5nLW1hbi1oYW5k/c29tZS1ndXlzLWVt/b3Rpb25hbC1wcml2/YXRlLTM5My5wbmc
-
+    
+    "Eccoli stanno arrivando..."
 
 
     show bollo normale
@@ -230,9 +236,11 @@ label bullying:
     "Forse, in fondo, dovrei ringraziare l'acqua per questa preziosa riflessione."
     "Grazie."
     
+    mist "Lasciatelo in pace"
     bullo "HEY TU CHI SEI??"
     "Huh?"
     
+    mist "Ora ti faccio vedere io chi sono"
     bullo3 "NO FERMO"
     play sound "punch.mp3"
     "~ SBANG ~" with hpunch
@@ -240,6 +248,7 @@ label bullying:
     bullo3 "AAAAAAA"
     # bullo 3 muore
 
+    mist "E invece tu..."
     bullo2 "NO NO NO"
     play sound "strongpunch.mp3"
     "~ SVIUUM ~" with hpunch
@@ -248,6 +257,7 @@ label bullying:
     # bullo 2 muore
 
     bullo "PERCHE' COSA TI ABBIAMO FATTO???"
+    mist "Sir, finishing this fight, o qualcosa del genere, viene da halo 2, non la sento da millenni"
     play sound "falconpunch.mp3"
     "~ FALCON PUNCH ~" with hpunch
     play sound "oof.mp3"
@@ -283,12 +293,11 @@ label bullying:
 
     e "Tutto bene?"
     # halo che dice "boh roba"
-    "Che cazzo?"
+    "Che cazzo? Master Chief?"
 
     scene bg black with fade
     # M.c. sviene (fucking halo starts the riot then he fucking sviene in inglese, ah giusto pass out)
     # https://www.pngegg.com/en/search?q=master+Chief
-
 
     # overlay
     # opac
@@ -300,10 +309,80 @@ label bullying:
     # soffitto https://imgs.search.brave.com/ChxEFNkEhU4vjEX8fbJjKj7gBbrhRvCf4_BGvoE9Hfk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5sYXZvcmluY2Fz/YS5pdC9wb3N0LzIy/LzIxMjg1L2dhbGxl/cnkvMzgyMTkvY29u/dHJvc29mZml0dG8t/Y29uLWRvY2NpYS1k/aS1sdWNlLWEtbGVk/LmpwZw
     # water https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
  
-    "fine."
+
+    scene bg nursery with fade
+    "Uh? Dove mi trovo?"
+    mist "Hey, you, you're finally awake"
+
+    
+    me "Aspetta, conosco questa frase..."
+    me "VIENE DA The Elder Scrolls V: Skyrim"
+
+    show ralof normale
+    
+    ralof "Eh?"
+    me "TU SEI RALOF!"
+    # 👆🤓 quanto nerd devi essere per sapere il nome, frocio
+    ralof "Come conosci il mio nome?"
+    # 👆🤓 chissà perché...
+    me "Come fai ad essere qua!?"
+    ralof "Boh, credo si sia aperto un portale(?)"
+
+    show ralof black at left
+    show covenant normale at right
+    cove "Ignoralo, si è ritrovato qua e non fa altro che ripetere quella frase"
+    show covenant black at right
+    me "Quale frase?"
+    "..."
+    me "ASPETTA TU SEI ARBITER WTF"
+    show ralof normale at left
+    ralof "Questa frase: Hey, you, you're finally awake"
+    me "Ahh... COSA CAZZO STA SUCCEDENDO"
+    show ralof black at left
+    show covenant normale at right
+    cove "Come ha già detto lui, sembra che si siano aperti dei portali che hanno connesso diversi mondi"
+    me "Questa cosa non ha senso... E POI PERCHE' SEI VESTITO DA INFERMIERA?!"
+    cove "Non ti preoccupare"
+    cove "Ah la tua vera infermiera mi ha detto che devi tornare in classe se stai bene."
+    me "Ok..."
+    
+    scene bg black with fade
+    "Poco dopo..."
+    scene bg classe with fade
+    
+    me "Ma cosa sta succendendo in questa giornata?"
+    me "Non ci sto capendo niente..."
+    prof "[name] concentrati! E' da tutta la lezione che sei distratto"
+    me "Ah si scusi... Ma non le sembra strano che ci sia un alieno nella nostra infermeria?"
+    prof "Ma quale alieno? Smettila di inventarti storie o ti metto una nota"
+    me "Va bene..."
+    "Ma sto impazzendo?"
+
+    
+    # mettere sfondo che torna a casa e boh
+     
+    "Fine."
     
 
-    # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva
+    
+    # Ralof
+    # https://imgs.search.brave.com/uQ8wU3C4FifTOGon8xSIGwSQ-8Xqi2bzCdkeMJ7xD44/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bmljZXBuZy5jb20v/cG5nL2RldGFpbC8x/MDA5LTEwMDk3OTEw/X3JhbG9mLXNreXJp/bS1zdG9ybWNsb2Fr/cy1lbGRlcnNjcm9s/bHMtZWxkZXJzY3Jv/bGxzdi1za3lyaW0t/cmFsb2YucG5n
+    # Flavio salva questio come "ralof normale"
+
+    # Arbiter (Arbitro) 
+    # https://www.planetminecraft.com/skin/the-arbiter-4994491/
+    # https://imgbin.com/png/5XFqFMS2/halo-3-halo-2-halo-4-halo-combat-evolved-halo-reach-png
+    # https://www.halopedia.org/Ripa_%27Moramee
+    # https://imgs.search.brave.com/olqDvKdNzBNte5lVS4EBnhDfdGY-tc2bepX6pODNt18/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2Vla3BuZy5jb20v/cG5nL2RldGFpbC82/OS02OTUyODVfaGFs/by1wbmcucG5n
+    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArbiter_%2528Halo%2529&psig=AOvVaw0RmWm8xNGAHfhxO8otlfhW&ust=1695068007334000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDbp8W6soEDFQAAAAAdAAAAABAE
+    # Flavio succhiami il cazzo "covenant normale"
+    # https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aiaschio.it%2Fdaniele-orsato%2F&psig=AOvVaw2SWN5ivvg3c23VGSpOZiUj&ust=1695067934053000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjkta26soEDFQAAAAAdAAAAABAE
+    # approvo
+
+    
+    # Yoshikage Kira fa il suo monologo
+    # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva 
+    
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
     
