@@ -456,6 +456,11 @@ label bullying:
     me "FIGÀ" 
     me "Mignotta"
     me "Cavoletti"
+    me "Pendejo"
+    me "Puta madre"
+    me "Concha de la lora"
+    me "Webon"
+    me "Rizzy"
     "..."
     me "Ok mi è passato il dolore, mi sono solo sbucciato il ginocchio"
     
