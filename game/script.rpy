@@ -580,6 +580,8 @@ label bullying:
     me "Uhm... ok..."
     
 
+    # "la crittografia assimmetrica è lenta"
+
 
 
 
