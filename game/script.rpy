@@ -632,11 +632,11 @@ label bullying:
     e "Do you remember 21 night of September?"
    
     menu september:
-    "Do you remember 21 night of September?"
-            "Sì":
-                jump fatechanged
-            "No":
-                jump normal
+        "Do you remember 21 night of September?"
+        "Sì":
+            jump fatechanged
+        "No":
+            jump normal
 
 
 label fatechanged:
