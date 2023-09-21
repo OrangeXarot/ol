@@ -192,7 +192,7 @@ label bullying:
     
     play sound "audio/pipe.mp3.mp3" 
 
-    "~ pipe.mp3 ~"
+    "~ pipe.mp3.mp3 ~"
     me "Huh cos'era quel suono??"
 
     show bollo normale with dissolve
