@@ -40,7 +40,7 @@ YEAH
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "HALO'S_COCK"
+define build.name = "HALOS_COCK"
 
 
 ## Sounds and music ############################################################
