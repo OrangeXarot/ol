@@ -42,6 +42,7 @@ jobs:
       with:
         sdk-version: '8.1.1'
         project-dir: '.'
+        package: 'mac', 'linux', 'market', 'web', 'android'
       env:
         SDL_AUDIODRIVER: dummy
         SDL_VIDEODRIVER: dummy
