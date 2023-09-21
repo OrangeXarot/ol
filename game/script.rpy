@@ -578,7 +578,11 @@ label bullying:
     # https://cdn.imgbin.com/23/20/13/imgbin-batman-the-man-who-laughs-joker-drawing-batman-qRBrBreXgLYmGwHZgRb46WbZT.jpg Batman stupido
     # chatgpt è fosse o era?
     me "Uhm... ok..."
-    
+    batman "VABBEH FRA, CI SENTIAMO"
+    "SWOOOOM" with vpunch
+    me "bruh... devo decisamente andare a dormire..."
+    # AH RAGA DOBBIAMO ASSOLUTAMENTE FARE UNALTRO DREAM SEQUENCE -ELIA
+
 
     # "la crittografia assimmetrica è lenta"
 
