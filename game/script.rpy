@@ -724,9 +724,9 @@ label november:
     me "Anche se in questo momento sto parlando da solo"
     dio "Sicuro?"
     # AHAHAHHAHA
-    # yay ora appaio io
+    # yay ora appaio io -elia
 
-    
+
     
     
     "Fine."
