@@ -8,7 +8,8 @@ define cove = Character("Covenant")
 define ralof = Character("Ralof")
 define prof = Character("Professore")
 define morty = Character("Morty")
-define batman = Character("BatMan") 
+define batman = Character("Batman") 
+define dave = Character("Crazy Dave")
 
 
 label name:
@@ -314,7 +315,8 @@ label bullying:
     # water https://imgs.search.brave.com/bGuAquUg7yKtjTUZpTtt4v0enXLB9i5evOsYya5gj0k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/NTcyNTc0L3Bob3Rv/L3dhdGVyLXJpcHBs/ZS1vdmVyLXNhbmR5/LWJlYWNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz15Y0RL/dGtMaDZmSk9CWVVU/c2dOMlQ2MDNiLVR2/TWk4ZWN6TGFTbDRX/TXk0PQ
  
 
-    scene bg nursery with fade
+    scene bg nursery with fade:
+        xzoom 1.2 yzoom 1.1
     "Uh? Dove mi trovo?"
     mist "Hey, you, you're finally awake"
 
@@ -337,7 +339,8 @@ label bullying:
     # approvo
 
 
-    show ralof normale
+    show ralof normale at center:
+        xzoom 1.5 yzoom 1.5
     
     ralof "Eh?"
     me "TU SEI RALOF!"
@@ -348,9 +351,11 @@ label bullying:
     ralof "Boh, credo si sia aperto un portale(?)"
 
     show ralof black at left
-    show covenant normale at right
+    show covenant normale at right:
+        xzoom 1.5 yzoom 1.5
     cove "Ignoralo, si è ritrovato qua e non fa altro che ripetere quella frase"
-    show covenant black at right
+    show covenant black at right:
+        xzoom 1.5 yzoom 1.5
     me "Quale frase?"
     "..."
     me "ASPETTA TU SEI ARBITER WTF"
@@ -372,6 +377,8 @@ label bullying:
     
     me "Ma cosa sta succendendo in questa giornata?"
     me "Non ci sto capendo niente..."
+    show prof normale
+    # https://imgs.search.brave.com/2DSBohC317ZpduglYzm_Kxr84-T_4lEV9afy015kA_c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2hhbmRzb21l/LWd1eS1wbmctc3Vp/dC1wbmctaW1hZ2Ut/OTIwLnBuZw    
     prof "[name] concentrati! E' da tutta la lezione che sei distratto"
     me "Ah si scusi... Ma non le sembra strano che ci sia un alieno nella nostra infermeria?"
     prof "Ma quale alieno? Smettila di inventarti storie o ti metto una nota"
@@ -499,14 +506,29 @@ label bullying:
     me "Nauceabunda"
     me "Cochambrosa"
     me "Infame"
+    me "Babbo"
+    me "Sei proprio un babbo"
+    me "Codardo"
+    me "Figlio di sultana"
     "..."
+
+    # Aggiungere più parolacce NO BASTA :'(
+    # NO RACIAL COMMENTS mimimi flavio pussy
+     
+
+
+    # "la crittografia assimmetrica è lenta"
+    # "quella simmetrica invece è veloce ma c'è il problema che bisogna trasmettere la chiave in un canale sicuro"
+
+
     me "Ok mi è passato il dolore, mi sono solo sbucciato il ginocchio"
     
     scene bg black with fade
     
     "Dopo il tempo che [name] ci mette per arrivare a casa..."
 
-    scene bg casa with fade
+    scene bg casa with fade:
+        xzoom 2.4 yzoom 2.4
     
     me "Finalmente sono tornato a casa"
     me "Casa dolce casa..."
@@ -526,8 +548,9 @@ label bullying:
     
     me "CHI CAZZO E' ORA CHE PORCAPUTTANA STO PERDENDO"
     
-    scene bg door with fade
-    # TODO IMMAGINE
+    scene bg door with fade:
+        xzoom 2.5 yzoom 2.5
+    # NOTODO IMMAGINE
 
     show morty normale
 
@@ -549,7 +572,9 @@ label bullying:
     
     "Dopo un lungo monologo molto descrittivo, e molto importante per la lore e ai fini della storia sull'accaduto"
     
-    scene bg door with fade
+    scene bg door with fade:
+        xzoom 2.5 yzoom 2.5
+
     
     show morty normale
     
@@ -558,19 +583,31 @@ label bullying:
     me "Oh hai finito?"
     morty "S-sì, oh geez"
     me "Ok ma in tutto ciò, cosa cazzo centro io?"
+
+    # Morty muore giusto? no, batman non uccide
+    
+
     batman "I AM VENGEANCE"
     play sound "punch.mp3"
     "~ SBANG ~" with hpunch
-    morty "AAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    
     show morty morto
-    show batman
+    morty "AAAAAAAAAAAAAAAAAAAAAAAAAAH"
     # aggiungere immagini TODO
     # http://pluspng.com/img-png/batman-png-1280.png Batman
     # https://e1.pngegg.com/pngimages/72/833/png-clipart-rick-and-morty-hq-resource-man-illustration.png Morty
     morty "SONO M-MORTY, S-SONO M-MORTY M-M-MORTO"
+    
+    show morty morto black at left with dissolve
+    show batman normale at right with dissolve:
+        xzoom 0.75 yzoom 0.75
     # https://static.wikia.nocookie.net/rickandmorty/images/5/52/PM-304.png/revision/latest?cb=20210718063614 Morty ferito
     batman "No non sei morto, però tutte le tue ossa sì" 
+    show batman normale with dissolve
+    show morty morto with dissolve
     morty "Ugh..."
+    hide morty
+    show batman normale at center with dissolve
     me "Ehm... Batman... Cosa ti ha fatto Morty?"
     batman "Prima di venire qua ha rubato un lecca lecca ad un bambino"
     me "Ah... e non ti sembra di aver esagerato un pochino?"
@@ -579,22 +616,119 @@ label bullying:
     # chatgpt è fosse o era?
     me "Uhm... ok..."
     batman "VABBEH FRA, CI SENTIAMO"
+    hide batman with dissolve
+    play sound "whoosh.mp3"
     "SWOOOOM" with vpunch
     me "bruh... devo decisamente andare a dormire..."
     # AH RAGA DOBBIAMO ASSOLUTAMENTE FARE UNALTRO DREAM SEQUENCE -ELIA
+    # SI OK BRO MA CON COSA DENTRO -FLAVIO
+    scene bg black with fade
+    "Zzz..."
+    scene bg white with fade
+    show halo dream
+    with fade
+
+    e "Hey, [name]."
+    e "Do you remember 21 night of September?"
+   
+    menu september:
+    "Do you remember 21 night of September?"
+            "Sì":
+                jump fatechanged
+            "No":
+                jump normal
 
 
-    # "la crittografia assimmetrica è lenta"
+label fatechanged:
+    python:
+        fatechanged = true
+    e "Wake me up when september ends"
+    # immagine questa azione avrà ripercusioni sulla story line
+    # non so se hai capito
+    # https://i.ytimg.com/vi/NEofyFAABEs/maxresdefault.jpg
+    # 👍
+    show bg ripercussioni at topright
+    # capito?
+    # yep
+    jump november
 
+label normal:
+    python:
+        fatechanged = false
+    e "Oh ok"
 
+    jump november
 
+label november:
+    hide halo
+    with dissolve
 
-    # Morty muore giusto? no, batman non uccide
+    # me "la crittografia assimmetrica è lenta"
+    # me "Quella simmetrica invece è veloce ma c'è il problema che bisogna trasmettere la chiave in un canale sicuro"
+    # AHAHHAHAHA
+    # NOO
+
+    me "Wait what?"
+    me "What is happening?"
     
+    scene bg wake
+    with fade
+    me "Ma che cazzo di nuovo"
+    me "Halo mi arrapa troppo"
 
-    # Aggiungere più parolacce NO BASTA :'(
-    # NO RACIAL COMMENTS mimimi flavio pussy
-     
+    # quando parla dave : play sound "dave.mp3"
+    # https://www.myinstants.com/en/instant/discord-call-44910/?utm_source=copy&utm_medium=share
+    # BARREL ROOLL
+    # https://vid.puffyan.us/watch?v=iUKRXpL9k10
+    
+    
+    play sound "dave1.mp3"
+    " ~ Urlo Distante ~ "
+    # meh
+    # https://www.myinstants.com/en/instant/crazy-dave-long-3-20460/?utm_source=copy&utm_medium=share
+    me "Oddio cosa c'è ora..."
+    scene bg fuoricasa with fade
+    show dave il pazzo
+
+    play sound "dave.mp3"
+    dave "IL MONDO STA FINENDO"
+    # E POI ARRIVA GERSON 
+    # https://www.myinstants.com/en/instant/chinese-rap-song-70819/?utm_source=copy&utm_medium=share
+
+    play sound "dave3.mp3"
+    dave "IL MONDO DEI VIDEOGIOCHI STA COLLASSANDO DENTRO IL MONDO REALE"
+    play sound "dave2.mp3"
+    # https://www.myinstants.com/en/instant/wubbawubawobobwaboulobobelwabbawubbawob-72964/?utm_source=copy&utm_medium=share
+    # dave2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+    # ...
+    dave "COMPRATE LE MIE PIANTE PER DIFENDERVI"
+    # https://www.myinstants.com/en/instant/crazy-dave-line-6-4984/?utm_source=copy&utm_medium=share
+    # Flavio metti questo (in daveroll), l'hai fatto vero?? siisisisisisisiomomweqopdnwfrgeibto woeèavrà
+    play sound "daveroll.mp3"
+    dave "SONO IN SCONTOOO!"
+    me "Ma che sta dice... Ah giusto, lo chiamano dave il \"pazzo\" per un motivo"
+    dave "Crazy? i was crazy once" # (.
+    # parte "crazy train.mp3" nah jk
+    # non so cosa sia
+    # ignorante
+    # gay
+    me "Once? Se lo dici tu"
+    dave "Sei tu quello che sta vedendo un personaggio di un videogioco, fai tu..."
+    me "Touché"
+    me "WAIT MA QUINDI SIETE VERI O NO??"
+    play sound "dave4.mp3"
+    dave "COMPRATE LE MIE PIANTE"
+    me "..."
+    me "E niente l'abbiamo perso"
+    me "Non saprò mai se sto impazzendo"
+    me "Anche se in questo momento sto parlando da solo"
+    dio "Sicuro?"
+    # AHAHAHHAHA
+    # yay ora appaio io
+
+    
+    
+    
     "Fine."
     
     
