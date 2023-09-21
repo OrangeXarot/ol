@@ -1,0 +1,27 @@
+name: Ren'Py Builder Workflow
+
+on:
+  push:
+    branches:
+      - main # Adjust to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x # Replace with the desired Python version
+
+     # - name: Install dependencies (if needed) 
+     #   run: |
+          # Add commands to install any project dependencies here
+          # For Ren'Py, you might need to install additional packages or dependencies
+
+      - name: Ren'Py Builder
+        uses: creeeples/renpy-docker-builder@v1.0.2
