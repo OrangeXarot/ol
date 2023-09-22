@@ -52,7 +52,7 @@ jobs:
       with:
         sdk-version: '8.1.1'
         project-dir: '.'
-        package: 'android'
+        package: android
       env:
         SDL_AUDIODRIVER: dummy
         SDL_VIDEODRIVER: dummy
