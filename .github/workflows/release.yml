@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Extract Version from Branch Name
+    - name: Uscimento di Versione
       id: extract_version
       run: |
           echo "old GITHUB_REF is $GITHUB_REF"
@@ -22,21 +22,21 @@ jobs:
       env:
         GITHUB_REF: ${{ github.ref }}
 
-    - name: Format Release Name
+    - name: Formaggio Nome Rilascio
       id: format_release_name
       run: |
         echo "::set-output name=release_name::Release-${{ steps.extract_version.outputs.ref }}"
       env:
         VERSION: ${{ steps.extract_version.outputs.ref }}
         
-    - name: Format Release Tag
+    - name: Formaggio Nome Targhetta
       id: format_tag_name
       run: |
         echo "::set-output name=tag_name::v${{ steps.extract_version.outputs.ref }}"
       env:
         VERSION: ${{ steps.extract_version.outputs.ref }}
         
-    - name: Build VN Project
+    - name: Piazzamento Blocchi Lego
       id: build_project
       uses: creeeples/renpy-docker-builder@v1.0.2
       with:
@@ -45,18 +45,6 @@ jobs:
       env:
         SDL_AUDIODRIVER: dummy
         SDL_VIDEODRIVER: dummy
-        
-    - name: Build Android Project
-      id: build_android_project
-      uses: creeeples/renpy-docker-builder@v1.0.2
-      with:
-        sdk-version: '8.1.1'
-        project-dir: '.'
-        package: android
-      env:
-        SDL_AUDIODRIVER: dummy
-        SDL_VIDEODRIVER: dummy
-
     - name: Setup GitHub Release
       uses: softprops/action-gh-release@v1
       with:
@@ -66,7 +54,7 @@ jobs:
       env:
           GH_TOKEN: ${{ github.token }}
 
-    - name: Upload All Build Folders
+    - name: Uscimento Costruzione Lego in Pubblico
       run: |
         for file in ${{ steps.build_project.outputs.dir }}/*.{zip,tar.bz2}; do
         echo "Uploading $file"
