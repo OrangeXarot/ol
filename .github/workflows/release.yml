@@ -57,7 +57,7 @@ jobs:
     - name: Uscimento Costruzione Lego in Pubblico
       run: |
         for file in ${{ steps.build_project.outputs.dir }}/*.{zip,tar.bz2}; do
-        echo "Uploading $file"
+        echo "Shredding $file for sussy situation"
         asset_name=$(basename "$file")
         gh release upload ${{ steps.format_tag_name.outputs.tag_name }} "$file" --clobber
         done
