@@ -11,6 +11,7 @@ define morty = Character("Morty")
 define batman = Character("Batman") 
 define dave = Character("Crazy Dave")
 define dio = Character("Dio")
+define morde = Character("Mordecock")
 
 label name:
     python:
@@ -19,6 +20,8 @@ label name:
     
     menu correct:
         "Ti chiami [name]?"
+
+
         "Sì":
             jump dream
         "No":
@@ -503,9 +506,11 @@ label bullying:
     me "Putrefacta"
     me "Diarrea"
     me "Chupapollas"
-    me "Soplahuevos"
+    me "Soplahuevos"    
+    me "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     me "Cerda"
     me "Nauceabunda"
+    me "Pasta al huevo"
     me "Cochambrosa"
     me "Infame"
     me "Babbo"
@@ -769,17 +774,106 @@ label november:
     hide keanu 
     with dissolve
     "OHHH"
-
-
+    "..."
+    me "Ok adesso che faccio?"
+    me "Boh mi sa che torno dentro casa e mi rimetto a giocare ad halo con b4stocino69"
+    me "Oppure a baldur's gate idk"
+    # è passato così tanto tempo che prima non esisteva HAHAHAHAHA
     
+    scene bg wake with fade
     
+    play sound "knock.mp3"
+    "~ KNOCK KNOCK KNOCK ~"
+    
+    me "EH MA DIO SANTO HO APPENA CHIUSO LA PORTA"
+    "Anzi lasciamo stare dio che è meglio"
+    "E non perché ora so che esiste"
+    "Ma perché poi sto coglione torna a parlarmi del fatto che vuole scopare tutti"
+
+    scene bg door with fade:
+        xzoom 2.5 yzoom 2.5
+
+    me "CHI CAZZO È?!"
+
+    scene bg fuoricasa with fade:
+        xzoom 3.2 yzoom 3.2
+    
+    e "Mi dispiace disturbare, ma ho sentito che stavi cercando qualcuno con cui giocare a Halo. Sono il leggendario Halo, non so se mi conosci, e ho bisogno del tuo aiuto per sconfiggere un nemico ancora più potente di tutti gli Halo messi insieme."
+    me "Master Chief?! oh.. uhm.. wow.. tu mi hai salvato la vita ieri uwu"
+    e "Mi chiamo Halo, e sì, a quanto pare sei importante per la lore"
+    me "Solo perché sono il protagonista"
+    e "Quanto egocentrico calmati fra"
+    e "Comunque devi aiutarmi"
+
+    play sound "bonk.mp3"
+    "~ BONK ~" with vpunch
+    e "AHIA!"
+    #show Morde
+    #with fade
+    morde "You will be far more useful in death"
+    me "MA CHE CAZZO TE SEI MORDEKAISER"
+    "* Instant boner *"
+    morde "Si mortale, e presto sia te che tutti gli altri mortali di questo mondo sarete sotto il mio controllo"
+    me "Wowowo slow down daddy... uhm volevo dire... buddy"
+    # hihi down
+    me "Non puoi metterti ad uccidere tutti e poi risuscitarli"
+    morde "Uhm actually, posso farlo"
+    #"-🤓"
+    e "Non finchè ci sono qua io"
+    
+    play sound "punch.mp3"
+    "~ SBANG ~" with hpunch
+
+    morde "You... have earned my attention..."
+    "Developers Note: Mordekeiser ha un problema con la lingua, visto che è bilingue continua a switchare tra inglese e italiano, ogni tanto usa anche il francese"
+    #LUI PUò OK?
+    morde "Escargot à la Bourguignonne!"
+    "Developers Note: Ecco appunto"
+
+    play sound "morde_ult.mp3"
+    "~ SWISHIUVUM ~"
+
+    me "Oh shit, non so se Master Chief può vincere uno scontro con Mordekaiser"
+
+    "2 minuti dopo..."
+
+    me "Di solito non dura così tanto la ulti di Mordekaiser..."
+    # dura più di me
+    
+    # play sound "cock.mp69"
+    "~ SWOOM ~"
+
+    me "OH ECCOLI"
+    "Chissà chi ha vinto..."
+
+    # ↓lemon party***↓
+    scene tea party:
+        xzoom 1.2
+    with fade
+    morde "E poi gli ho detto 'You claim strength, Darius? Prove it.'"
+    e "Lol (hehe capita? League Of Legends cioè lol hihi) e lui come ha risposto?"
+    morde "Boh l'ho one-shottato subito dopo lmao"
+    e "Rofl"
+    me "Ma che cazzo..."
+    morde "Oh hey [name], ho deciso di non conquistare più il tuo mondo tranquillo"
+    morde "Ah e halo mi ha detto tutto su di te"
+    me "Oh ok ne sono felic-"
+    me "Aspetta cosa ti ha detto di me?"
+    play sound "mordekaiser_laugh.mp3"
+    morde "Solo che sei uno sfigato a cui ha salvato il culo da dei patetici bulli MWAHAHAHAHA"
+    #morde "MWAHHAHA! Ho usato la mia ulti \"Static Field\" contro di te"
+    #morde "Jkjk quella è la ulti di Lux"
+    # il resto lo lascio a te
+
     "Fine."
     
-    
+    # Barbie "Now I Am Become Destroyer, the Death of Worlds"
     # Yoshikage Kira fa il suo monologo
-    # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva 
-    # Prima o poi aggiungere scena su arasaka tower con dio
-    
+    # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva Lo useremo quando tradisci mc (non il mc) con qualcunaltro e lui ti scopre
+    # Prima o poi aggiungere scena su arasaka tower con dio 
+    # 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍
+    # non approvo -flavio ☭
+    # e poi Hitler da un bacio a stalin
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
     
