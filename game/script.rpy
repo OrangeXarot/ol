@@ -10,7 +10,7 @@ define prof = Character("Professore")
 define morty = Character("Morty")
 define batman = Character("Batman") 
 define dave = Character("Crazy Dave")
-
+define dio = Character("Dio")
 
 label name:
     python:
@@ -457,6 +457,8 @@ label bullying:
     me "Balle"
     me "Mortacci" 
     me "Sega (azienda di videogiochi)" 
+    me "Sega (l'utensile)"
+    me "Sega (la cosa che si fanno i maschietti)"
     me "Fottuto" 
     me "Rompipalle"
     me "Rompicoglioisazzi" 
@@ -641,20 +643,21 @@ label bullying:
 
 label fatechanged:
     python:
-        fatechanged = true
+        fatechanged = True
     e "Wake me up when september ends"
     # immagine questa azione avrà ripercusioni sulla story line
     # non so se hai capito
     # https://i.ytimg.com/vi/NEofyFAABEs/maxresdefault.jpg
     # 👍
-    show bg ripercussioni at topright
+    show bg ripercussioni at topright:
+        xzoom 1.5 yzoom 1.5
     # capito?
     # yep
     jump november
 
 label normal:
     python:
-        fatechanged = false
+        fatechanged = False
     e "Oh ok"
 
     jump november
@@ -687,7 +690,8 @@ label november:
     # meh
     # https://www.myinstants.com/en/instant/crazy-dave-long-3-20460/?utm_source=copy&utm_medium=share
     me "Oddio cosa c'è ora..."
-    scene bg fuoricasa with fade
+    scene bg fuoricasa with fade:
+        xzoom 3.2 yzoom 3.2
     show dave il pazzo
 
     play sound "dave.mp3"
@@ -718,13 +722,53 @@ label november:
     me "WAIT MA QUINDI SIETE VERI O NO??"
     play sound "dave4.mp3"
     dave "COMPRATE LE MIE PIANTE"
+    hide dave il pazzo
+    with dissolve
     me "..."
     me "E niente l'abbiamo perso"
-    me "Non saprò mai se sto impazzendo"
-    me "Anche se in questo momento sto parlando da solo"
-    dio "Sicuro?"
     # AHAHAHHAHA
     # yay ora appaio io -elia
+    me "Non saprò mai se sto impazzendo"
+    me "Anche se in questo momento sto parlando da solo"
+    mist "Sicuro?"
+    me "Oddio chi c'è adesso"
+    mist "Proprio Dio"
+    me "Quello di JoJo?"
+    mist "..."
+    mist "No..."
+    show keanu at top
+    with fade
+    me "Ma te sei... Keanu Reeves?"
+    dio "No, Keanu è la mia reincarnazione nel mondo terrestre, sono Dio"
+    me "Uhhhh ok?"
+    dio "Beh... come va la vita?"
+    me "Quindi Dio viene a parlare direttamente con me e la prima cosa che mi chiede è 'come va la vita'"
+    me "..."
+    me "..."
+    me "..."
+    "Ok sto decisamente impazzendo"
+    me "Bene..."
+    me "...Anche se credo di star impazzendo"
+    dio "Nah sei ancora sano non ti preoccupare"
+    me "Certo... Comunque c'era qualcosa che dovevi dirmi oltre a chiedermi come andava la mia vita?"
+    dio "Hmmmmm"
+    dio "No non credo"
+    me "Ok allora puoi andartene per piacere?"
+    dio "Hmmmm"
+    dio "Ok bella bro"
+    dio "Ci vediamo sulla Arasaka Tower"
+    "Finalmente"
+    dio "Comunque sono tecnicamente pansessuale"
+    "..."
+    "That's kinda gay"
+    dio "Perché amo tutti capito?"
+    "..."
+    dio "Perché sono Dio no?"
+    me "TE NE VAI???"
+    dio "OKOK VADO CALMATI ZIO"
+    hide keanu 
+    with dissolve
+    "OHHH"
 
 
     
@@ -734,6 +778,7 @@ label november:
     
     # Yoshikage Kira fa il suo monologo
     # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva 
+    # Prima o poi aggiungere scena su arasaka tower con dio
     
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
