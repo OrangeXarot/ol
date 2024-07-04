@@ -889,7 +889,7 @@ label mioScroto:
     python:
         mordeAffectionRate -= 1
     me "Succhiami lo scroto troia"
-    morde "COSA HAI DETTO LURIDO MORTALE?!"ù
+    morde "COSA HAI DETTO LURIDO MORTALE?!"
     show angryMorde
     play angryAnime.mp3
     "Oh cazzo mi sono appena suicidato"
@@ -925,6 +925,7 @@ label suePalle:
     me "Ok scusate vado a casa mia a piangere sotto la doccia"
     e "Oook..."
     morde "This kid got problems man"
+    e "Io te l'ho detto bro"
   
 
     label palleSucchiate:
