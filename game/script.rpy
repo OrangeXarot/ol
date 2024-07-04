@@ -13,6 +13,17 @@ define dave = Character("Crazy Dave")
 define dio = Character("Dio")
 define morde = Character("Mordecock")
 
+label start:
+    jump globalsex
+
+
+label globalsex:
+    python:
+        mcAffectionRate = 0
+        mordeAffectionRate = 0
+        
+    jump name
+
 label name:
     python:
         name = renpy.input("Come ti chiami?", length=32)
@@ -27,9 +38,6 @@ label name:
         "No":
             jump name
 
-label start:
-
-    jump name
     
 label dream:
 
@@ -48,12 +56,17 @@ label dream:
             jump noed
         
 label yessed:
+    python:
+        mcAffectionRate += 0.5 
     me "Yes, I love it!"
     # https://www.myinstants.com/en/instant/youtube-uwuuuuu-67534/ (/s)
     
     jump after
 
 label noed: 
+    python:
+        mcAffectionRate -= 0.3
+
     me "I Hate it!"
     "But I was lying"
     jump after
@@ -818,6 +831,7 @@ label november:
     # hihi down
     me "Non puoi metterti ad uccidere tutti e poi risuscitarli"
     morde "Uhm actually, posso farlo"
+    "* nerd emoji* "
     #"-🤓"
     e "Non finchè ci sono qua io"
     
@@ -861,10 +875,63 @@ label november:
     me "Aspetta cosa ti ha detto di me?"
     play sound "mordekaiser_laugh.mp3"
     morde "Solo che sei uno sfigato a cui ha salvato il culo da dei patetici bulli MWAHAHAHAHA"
+    # Pazzesco pensare che ora siamo maturi
+    e "Ma no dai poverino"
+   
+menu rebel:
+    "Come vuoi rispondere a Mordekaiser??"
+    "Succhiami lo scroto troia":
+        jump mioScroto
+    "Ok scusa morde posso succhiarti le palle per piacere? uwu tehee~~~":
+        jump suePalle
+
+label mioScroto:
+    python:
+        mordeAffectionRate -= 1
+    me "Succhiami lo scroto troia"
+    morde "COSA HAI DETTO LURIDO MORTALE?!"ù
+    show angryMorde
+    play angryAnime.mp3
+    "Oh cazzo mi sono appena suicidato"
+    me "S-scusa non vo-"
+    me "Aspe cos'era quella voce?"
+    morde "Ehm... quando mi arrabbio la mia voce diventa un po' acuta"
+    morde "MA NON è QUELLO IL PUNTO"
+    e "Heyy perché non ci calmiamo un po' tutti eh?"
+    morde "NON DIRMI COSA FARE"
+    e "Oooook"
+    e "(Sottovoce a [name]) Corri a casa mentre provo a calmarlo"
+    me "Oh ok grazie"
+    morde "*Angry anime girl noises*"
+    # (incazzato)
+
+
+label suePalle:
+    python:
+        mordeAffectionRate += 0.7
+        mcAffectionRate -= 0.5
+    me "Ok scusa morde, posso succhiarti le palle per piacere? uwu tehee~~~"
+    morde "C-cosa hai detto lurido mortale?!"
+    # (appagato e confuso)
+    e "Ayo wtf man"
+    me "Ehm volevo dire"
+    me "Ok scusa morde, mi fanno un po' male le spalle"
+    morde "Uh... Ok... Ma non chiamarmi morde"
+    me "Oh sì scusa Master"
+    e "Mi hai chiamato?"
+    morde "..."
+    me "MORDEKAISER***"
+    morde "What the hell man"
+    me "Ok scusate vado a casa mia a piangere sotto la doccia"
+    e "Oook..."
+    morde "This kid got problems man"
+  
+
+    label palleSucchiate:
+    #"Glub glub glub °°°°"
     #morde "MWAHHAHA! Ho usato la mia ulti \"Static Field\" contro di te"
     #morde "Jkjk quella è la ulti di Lux"
     # il resto lo lascio a te
-
     "Fine."
     
     # Barbie "Now I Am Become Destroyer, the Death of Worlds"
@@ -872,8 +939,9 @@ label november:
     # https://img1.picmix.com/output/stamp/normal/9/5/0/2/2172059_80b99.png me when coffe TODO flavio la voleva Lo useremo quando tradisci mc (non il mc) con qualcunaltro e lui ti scopre
     # Prima o poi aggiungere scena su arasaka tower con dio 
     # 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍
-    # non approvo -flavio ☭
-    # e poi Hitler da un bacio a stalin
+    # non approvo -flavio☭
+    # e poi Hitler da un bacio a stalin (https://i.kym-cdn.com/photos/images/original/002/422/739/f49.gif)
+    # and HAWK TUAH spit on that thang
     # Timmy Returner 🤓🤓🤓🤓⛪⛪⛪⛪
     return
     
